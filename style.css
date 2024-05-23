@@ -1,12 +1,35 @@
-{
+@import url();
+
+*{
     margin: 0;
     padding: 0;
 }
- :root{
-    
- }
+
+:root{
+    --cor-um: #000000;
+    --cor-dois: #ff0000;
+    --cor-tres: #940d0d;
+    --cor-quatro: #c53838;
+    --cor-cinco: #f31c1c;
+    --texto-corpo: "raleway", sans-serif;
+    --texto-titulo: "sedan sc", srif;
+}
 
 body{
-    background-color: #252fbe
-    color: whitesmoke;
+    background:#e08f8f;
+    color: #411919;
+
+    font-family: var(--texto-titulo);
 }
+.cabecalho-img{
+    width: 15%;
+    border-radius: 80%;
+}
+.cabecalho-nav_link{
+    text-decoration: none;
+    font-family: var(--texto-titulo);
+    font-size: 24px;
+    color: var(--cor-tres);
+    margin-right: 24px;
+}
+
