@@ -72,3 +72,12 @@ body{
     border-radius: 0 5% 0 5%;
 
 }
+
+.principal-capa__botao{
+    background-color: var(--cor-um);
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+    color: #0b0ec7;
+    text-decoration: none;
+}
