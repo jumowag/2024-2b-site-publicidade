@@ -6,18 +6,18 @@
 }
 
 :root{
-    --cor-um: #ffffff;
-    --cor-dois: #898997;
-    --cor-tres: #f7f7f7;
-    --cor-quatro: #c53838;
-    --cor-cinco: #f31c1c;
+    --cor-um: #fafafa;
+    --cor-dois: #e2e2f7;
+    --cor-tres: #4d4d4d;
+    --cor-quatro: #110794;
+    --cor-cinco: #2d0ebb;
     --texto-corpo: "raleway", sans-serif;
     --texto-titulo: "sedan sc", srif;
 }
 
 body{
     background:#272fa5;
-    color: #7c7979;
+    color: #515161;
 
     font-family: var(--texto-titulo);
 }
@@ -49,6 +49,12 @@ body{
     background-repeat: no-repeat;
     padding: 24px 12px;
 }
+
+.principal-capa__combotao{
+    display: flex;
+    flex-direction: column;
+    aling-items: flex-start;
+}
  
 .principal-capa__conteudo{
     display: flex;
@@ -59,7 +65,7 @@ body{
 .principal-capa__titulo{
     font-family: var(--texto-titulo);
     font-size: 32px;
-    color: var(--cor-um);
+    color: var(--cor-dois);
     margin-bottom: 12px;
 }
 
@@ -74,10 +80,44 @@ body{
 }
 
 .principal-capa__botao{
-    background-color: var(--cor-um);
+    background-color: transparent;
     border-radius: 5px;
     padding: 1em;
     margin-top: 2em;
-    color: #0b0ec7;
+    color: #ffffff;
     text-decoration: none;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-dois);
+    color: var(--cor-dois);
+}
+
+.propaganda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: 0 7em;
+}
+
+.propaganda__imagem{
+    width: 50%;
+}
+
+.propaganda__titulo{
+    font-family: var(--texto-titulo);
+    font-size: 48px;
+    color: var(--cor-um);
+}
+
+propaganda__titulo:hover{
+    text-shadow: 3px 3px 5px var(--cor-dois);
+    transition: 700ms;
+}
+
+.propaganda__texto{
+    font-size: 24px;
+    color: var(--cor-dois);
 }
